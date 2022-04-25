@@ -11,9 +11,7 @@ public class Conexion {
         Connection connection = null;
         try {
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5433/mensajes_app","postgres","Postgres2022$");
-            if (connection != null){
-                System.out.println("conexion exitosaa");
-            }
+
         } catch (SQLException e) {
             System.out.println(e);
         }
