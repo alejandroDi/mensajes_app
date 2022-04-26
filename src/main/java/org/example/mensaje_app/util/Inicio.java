@@ -13,8 +13,8 @@ public class Inicio {
             System.out.println("Aplicacion de mensajes");
             System.out.println("1. Crear mensaje");
             System.out.println("2. Listar mensajes");
-            System.out.println("3. Editar mensaje");
-            System.out.println("4. Eliminar mensaje");
+            System.out.println("3. Eliminar mensaje");
+            System.out.println("4. Editar mensaje");
             System.out.println("5. Salir");
             opcion = sc.nextInt();
             switch (opcion){
@@ -22,9 +22,9 @@ public class Inicio {
                     break;
                 case 2: MensajesService.listarMensajes();
                     break;
-                case 3: MensajesService.editarMensaje();
+                case 3: MensajesService.borrarMensaje();
                     break;
-                case 4: MensajesService.borrarMensaje();
+                case 4: MensajesService.editarMensaje();
                     break;
                 default:
                     break;
